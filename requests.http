@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/crear-productos HTTP/1.1
+Content-Type: application/json
+
+{
+    "name_producto": "Producto6",
+    "precio": "6",
+    "img_url": "https://photos.app.goo.gl/vdwkS18RKhcHi6ae6"
+}
+
+###
+GET http://localhost:9000/api/consultar-productos HTTP/1.1
+
+###
+GET http://localhost:9000/api/buscar-productos/63334f04345cec1ad79acfb2 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/editar-productos/63334f04345cec1ad79acfb2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name_producto": "producto7",
+    "precio": "7",
+    "img_url": "https://photos.app.goo.gl/Rdyy86s8VQ5iH16u7"
+}
+
+###
+DELETE http://localhost:9000/api/borrar-productos/63334f04345cec1ad79acfb2 HTTP/1.1
